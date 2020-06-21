@@ -1,24 +1,95 @@
 body {
   text-align: center;
   background-color: black;
-  color: #B0AFAA;
+  color: white;
+  z-index: 1;
+  font-size: 20px;
 }
-.firstimg {
-  width:100%;
-  z-index: -1;
+
+
+.firstvid{
+position: relative;
+width:1500px;
+display: inline-block;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+background-size: cover;
+z-index: -20;
 }
-.table, tr, td, th {
-  border: 3px solid #B0AFAA;
+
+.description {
+  text-align: center;
+  width: 75%;
+  margin-left: 180px;
+  z-index: 20;
+}
+
+h1 {
+  text-align: center;
+  font-size: 7rem;
+  padding: 5%;
+  margin: 1%;
+  margin-bottom: 3%;
+  z-index: 20;
+  color: 	#f6f6f6;
+}
+
+
+.video-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  z-index: -20;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px 0px 0px 0px;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+
+#features {
+  padding: 5%;
+  margin: 5%;
+}
+
+.logo {
+  font-size: 5rem;
+  height: 70px;
+  padding: 70px;
+}
+
+.features_intro {
+  text-align: left;
+  font-size: 3rem;
+}
+
+.right {
+  position: relative;
+
+}
+
+.left {
+  position: relative;
+}
+
+.table,.table tr,.table td, .table th {
+  padding: 1%;
   border-collapse: collapse;
-  padding: 1%
+  border: 0;
+  border-top: 0 solid black;
 }
+
 .table {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-  color: #E5DFDC;
+  color: #e5dfdc;
 }
-.Covid-vedio {
-  padding: 3%;
+
+.features_description {
+  margin: 70px;
 }

@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <title></title>
+  <!-- CSS only -->
+  <script src="https://kit.fontawesome.com/3e9aa2adbe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<h1>Covid Education</h1>
-  <div>
-    <img class="firstimg" src="bb.png" alt="image">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Tracker</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Statistics</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Informatio</a>
+            <a class="dropdown-item" href="#">Video</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Visual representation</a>
+          </div>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="video-container">
+
+    <video src="video.mp4" autoplay loop muted class="firstvid">
+
+      <h1>Covid cases</h1>
   </div>
-  <div class="Covid-vedio">
-<iframe width="853" height="480" src="https://www.youtube.com/embed/rAj38E7vrS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <div class="firstdiv">
+    <h1>Covid Education</h1>
+    <p class="description">Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV).
+      A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans. </p>
+    <p class="description">
+      Coronaviruses are zoonotic, meaning they are transmitted between animals and people. Detailed investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from dromedary camels to humans. Several known coronaviruses
+      are circulating in animals that have not yet infected humans.
+      Common signs of infection include respiratory symptoms, fever, cough, shortness of breath and breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome, kidney failure and even death.</p>
+    <p class="description">
+      Standard recommendations to prevent infection spread include regular hand washing, covering mouth and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with anyone showing symptoms of respiratory illness
+      such as coughing and sneezing.
+    </p>
+
   </div>
-  <table class="table">
-    <tr>
-      <th> S.No.</th>
-      <th>Location</th>
-      <th>Time</th>
-    </tr>
-    <tr>
-      <td> 1 </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td> 2 </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td> 3 </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td> 4 </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td> 5 </td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
-  </body>
+
+  <div id="features">
+    <p class = "features_intro"> Prevention is the best cure : </p>
+      <table class="table">
+        <tr>
+          <td><p class = "features_description">Avoid close conatct with others at all cost! <p></td>
+          <td><i class="fas fa-handshake-slash  right logo"></i></</td>
+        </tr>
+        <tr>
+          <td> <p class = "features_description">Sanitize and wash hands often. The more you clean yourself and your surreondings clean the more difficult will it be for COVID to spread to you.</p></td>
+          <td> <i class="fas fa-pump-soap left logo"></i></td>
+        </tr>
+        <tr>
+          <td><p class = "features_description">Follow the social distancing guidelines as per the WHO.</p> </td>
+          <td> <i class="fas fa-people-arrows  right logo"></i></td>
+        </tr>
+        <tr>
+          <td><p class = "features_description">Staying home it the best protection you have at your disposal!</p> </td>
+          <td><i class="fas fa-house-user left logo"></i></td>
+        </tr>
+        <tr>
+          <td> <p class = "features_description">If at all going out make sure to wear a mask.</p> </td>
+          <td> <i class="fas fa-head-side-mask right logo"></i></td>
+        </tr>
+      </table>
+  </div>
+</body>
+
+<script src= "index.js">
+</script>
+
+
 </html>
