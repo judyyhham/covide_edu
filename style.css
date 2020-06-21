@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  background-color: black;
+  color: #B0AFAA;
+}
+.firstimg {
+  width:100%;
+  z-index: -1;
+}
+.table, tr, td, th {
+  border: 3px solid #B0AFAA;
+  border-collapse: collapse;
+  padding: 1%
+}
+.table {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  color: #E5DFDC;
+}
+.Covid-vedio {
+  padding: 3%;
+}
