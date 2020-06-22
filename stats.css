@@ -10,6 +10,7 @@
 }
 html{
     font-size: 16px;
+    background-color: black;
 }
 .hide{
     display: none;
@@ -39,7 +40,13 @@ header{
 
     margin: 0 auto;
 
-    background-color: #F3F2F2;
+    background-color:black;
+}
+header h1{
+    color: white;
+    font-size: 5em;
+    padding-top:1em;
+    font-family: monospace;
 }
 /* -------- LOGO -------- */
 .logo{
@@ -47,17 +54,10 @@ header{
     align-items: center;
     padding-left: 20px;
 }
-.logo img{
-    width: 60px;
-}
-.logo p {
-    font-weight: bold;
-    color: #6a149b;
-}
+
+
 /* -------- NAV -------- */
-nav{
-    
-}
+
 
 nav ul{
     display: flex;
@@ -79,6 +79,7 @@ nav ul li a {
 /* ---------------------------------------------- */
 main{
     margin: 0 auto;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
 }
 /* -------- BG IMAGE -------- */
 .stats{
@@ -89,13 +90,13 @@ main{
 /* -------- LATEST REPORT -------- */
 .latest-report{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-
-    width: 80%;
+    height: 27em;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 50px;
-
+    padding: 10%;
+    opacity: 0.9;
     color: #FFF;
 }
 
@@ -103,12 +104,13 @@ main{
 .total-cases,
 .recovered,
 .deaths{
-    height: 100px;
+    height: 100%;
+    border-radius: 2vmax;
 }
 
 .name{
-    font-size: 2.2em;
-    color: #be64f1;
+    font-size: 5em;
+    color: yellow;
     font-weight: bold;
 }
 
@@ -119,19 +121,33 @@ main{
 .title{
     font-size: 1.3em;
 }
+.total-cases{
+    background-color: rgba(235, 155, 8, 0.753);
+    padding: 2em;
+}
+.recovered{
+    background-color:green;
+    padding: 2em;
+}
+.deaths{
+    background-color: red;
+    padding: 2em;
+}
 .total-cases .value{
-    font-size: 2em;
+    font-size: 3em;
+    justify-content: center;
     font-weight: bold;
+    color: white;
 }
 .recovered .value{
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
-    color: #009688;
+    color: white;
 }
 .deaths .value{
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
-    color: #f44336;
+    color:white;
 }
 .new-value{
     font-size: 1.3em;

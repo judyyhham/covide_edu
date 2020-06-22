@@ -7,7 +7,7 @@ const new_recovered_element = document.querySelector(".recovered .new-value");
 const deaths_element = document.querySelector(".deaths .value");
 const new_deaths_element = document.querySelector(".deaths .new-value");
 
-const ctx = document.getElementById("axes_line_chart").getContext("2d");
+//const ctx = document.getElementById("axes_line_chart").getContext("2d");
 
 // APP VARIABLES
 let app_data = [],
@@ -84,7 +84,7 @@ fetchData(user_country);
 // UPDATE UI FUNCTION
 function updateUI(){
 	updateStats();
-	axesLinearChart();
+	//axesLinearChart();
 }
 
 function updateStats(){
@@ -96,7 +96,7 @@ function updateStats(){
 	country_name_element.innerHTML = last_entry.country_name;
 
 	total_cases_element.innerHTML = last_entry.total_cases || 0;
-	new_cases_element.innerHTML = `+${last_entry.new_cases || 0 }`;
+	//new_cases_element.innerHTML = `+${last_entry.new_cases || 0 }`;
 
 	recovered_element.innerHTML = last_entry.total_recovered || 0;
 	
@@ -104,53 +104,14 @@ function updateStats(){
     //let x = before_last_entry.total_recovered;
 
 	deaths_element.innerHTML = last_entry.total_deaths;
-    new_deaths_element.innerHTML = `+${last_entry.new_deaths || 0}`;
+    //new_deaths_element.innerHTML = `+${last_entry.new_deaths || 0}`;
     //new_recovered_element.innerHTML = y +'-'+x
 
     //`+${parseInt(last_entry.total_recovered.replace(/,/g, "")) - parseInt(before_last_entry.total_recovered.replace(/,/g, ""))}`;
 }
 
 // UPDATE CHART
-let my_chart;
-function axesLinearChart(){
 
-	if(my_chart){
-		my_chart.destroy();
-	}
-
-	my_chart = new Chart(ctx, {
-		type: 'line',
-		data: {
-			datasets: [{
-				label: 'Cases',
-				data: cases_list,
-				fill : false,
-				borderColor : '#FFF',
-				backgroundColor: '#FFF',
-				borderWidth : 1
-			},{
-				label: 'Recovered',
-				data: recovered_list,
-				fill : false,
-				borderColor : '#009688',
-				backgroundColor: '#009688',
-				borderWidth : 1
-			},{
-				label: 'Deaths',
-				data: deaths_list,
-				fill : false,
-				borderColor : '#f44336',
-				backgroundColor: '#f44336',
-				borderWidth : 1
-			}],
-			labels: formatedDates
-		},
-		options: {
-			responsive : true,
-			maintainAspectRatio : false
-		}
-	});
-}
 
 // FORMAT DATES
 const monthsNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
