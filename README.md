@@ -1,6 +1,8 @@
 # COVIED ("COVI-ED") 
 
-COVIED is a COVID Educational website that is intended to teach students and educators of what Covid 19 was in a concise manner. This contains HTML, Bootstrap, JavaScript, API from World Health Education.
+COVIED is a COVID Educational website that is intended to teach students and educators of what Covid-19 was in a concise manner. This contains HTML, Bootstrap, JavaScript, API from World Health Education.
+
+This project was submitted for Def Hacks 2020. 
 
 ## Inspiration
 We wanted to make a website that informs about COVID-19, all in one place. Sometimes, it can be distracting and confusing with all the updates about new policies and regulations, research, and statistics. Therefore we wanted to create a concise and informative website, just about what the COVID-19 is. 
